@@ -11,7 +11,7 @@
 @IDE     : PyCharm
 ------------------------------------
 """
-from .autoParamInjection import AutoInjection
+from nightwalker.builtin.autoParamInjection import AutoInjection
 
 
 class Login(AutoInjection):

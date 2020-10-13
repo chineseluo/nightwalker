@@ -14,8 +14,7 @@
 import yaml
 import os
 import logging
-from Common.FileOption.comFileOption import get_roots_dirs_files_list
-from Common.FileOption.yamlOption import YamlFileOption
+from examples.Common.FileOption.yamlOption import YamlFileOption
 
 
 class AutoInjection:

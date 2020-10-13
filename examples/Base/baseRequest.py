@@ -14,7 +14,7 @@
 import os
 import requests
 import logging
-from Common.FileOption.yamlOption import YamlFileOption
+from examples.Common.FileOption.yamlOption import YamlFileOption
 
 # 读取Conf下的conf.yml全局配置文件
 conf_yaml_path = os.path.join(os.path.dirname(__file__).split("Base")[0], "Conf/conf.yml")
