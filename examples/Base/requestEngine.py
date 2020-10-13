@@ -70,22 +70,4 @@ def start_run_case(params_object, params_mark, session_connection=None, checker=
 
 
 if __name__ == "__main__":
-    import os
-    from Parameter.yamlChoice import Login
-    from Common.StringOption.StringOperate import String
-    from Common.FileOption.yamlOption import YamlFileOption
-    # 读取Conf下的conf.yml全局配置文件
-    conf_yaml_path = os.path.join(os.path.dirname(__file__).split("Base")[0], "Conf/conf.yml")
-    # 根据读取的conf.yml中的配置信息获取测试的网址服务等信息
-    conf_server_info = YamlFileOption().read_yaml(conf_yaml_path)["server_info"]
-
-    username = conf_server_info["username"]
-    password = conf_server_info['password']
-    md5_pwd = String().transfer_md5(str(password))
-    params = {
-        'username': username,
-        'password': md5_pwd,
-    }
-    result = start_run_case(Login, "用户登录", data=params)
-    print(result)
-    print(result.json())
+    ...

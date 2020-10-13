@@ -1,6 +1,6 @@
 description: 用户列表，用于用户的增删改查
 parameters:
-  - url: /oauth2/access_token
+  - url: /xxx/xxxx
     desc: 用户登录
     method: post
     headers: {
@@ -8,18 +8,10 @@ parameters:
     }
     params: {}
     data:
-      client_id: '17953450251798098136'
-      client_secret: '08E9EC6793345759456CB8BAE52615F3'
-      grant_type: 'password'
-      type: 'account'
-      autoLogin: 'true'
-      password_type: 2
-      language: 2
-      username: 'liwei@inhand.com.cn'
-      password: 'E10ADC3949BA59ABBE56E057F20F883E'
+      client_id: 'xxxx'
     json: {}
 
-  - url: /api/invpn/users
+  - url: /xxx/xxx/xxxx
     desc: 获取用户列表
     method: get
     header: {
@@ -33,7 +25,7 @@ parameters:
       "example": "example"
     }
 
-  - url: /api/invpn/user
+  - url: /xxx/xxx/xxx
     desc: 创建用户
     method: post
     header: {

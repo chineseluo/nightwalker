@@ -80,34 +80,4 @@ class BaseRequest:
 
 
 if __name__ == '__main__':
-    from Common.StringOption.StringOperate import String
-    from requests.api import request
-    import requests
-
-    b = BaseRequest()
-    username = conf_server_info["username"]
-    password = conf_server_info['password']
-    md5_pwd = String().transfer_md5(str(password))
-    headers = {
-        "Content-Type": "application/x-www-form-urlencoded"
-    }
-    params = {
-        'client_id': '17953450251798098136',
-        'client_secret': '08E9EC6793345759456CB8BAE52615F3',
-        'grant_type': 'password',
-        'type': 'account',
-        'autoLogin': 'true',
-        'password_type': 2,
-        'language': 2,
-        'username': username,
-        'password': md5_pwd,
-    }
-    print(params)
-    # res = b.send_request(part_url='/oauth2/access_token', method="POST", headers=headers, data=params)
-    r = requests.Session()
-    res = r.post(url='http://beta.inconnect.inhand.design/oauth2/access_token', headers=headers,
-                 params=params)
-    print(res.text)
-    print(res.cookies)
-    cookie = requests.utils.dict_from_cookiejar(res.cookies)
-    print(cookie)
+    ...

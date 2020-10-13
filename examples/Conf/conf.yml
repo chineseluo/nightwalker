@@ -1,6 +1,6 @@
 server_info:
-  base_url: beta.inconnect.inhand.design
+  base_url: xxxx
   protocol: http
-  username: luozw@inhand.com.cn
+  username: xxxx
   password: 123456
   verify: false
