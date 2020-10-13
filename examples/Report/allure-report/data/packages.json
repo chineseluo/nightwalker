@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCases.test_login",
+    "children" : [ {
+      "name" : "测试登录",
+      "uid" : "f700567a6ffea194",
+      "parentUid" : "5b9bff3cc878bfbc7326d20d4563c3d2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1602494926610,
+        "stop" : 1602494927681,
+        "duration" : 1071
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "TestCases.test_login"
+  } ]
+}

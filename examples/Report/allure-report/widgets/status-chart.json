@@ -1,0 +1,11 @@
+[ {
+  "uid" : "f700567a6ffea194",
+  "name" : "测试登录",
+  "time" : {
+    "start" : 1602494926610,
+    "stop" : 1602494927681,
+    "duration" : 1071
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Login",
+    "children" : [ {
+      "name" : "Test Login",
+      "children" : [ {
+        "name" : "测试登录",
+        "uid" : "f700567a6ffea194",
+        "parentUid" : "6dbcfd3c1e4e25f826ddd8c9a053bc40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602494926610,
+          "stop" : 1602494927681,
+          "duration" : 1071
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6dbcfd3c1e4e25f826ddd8c9a053bc40"
+    } ],
+    "uid" : "14102d61eef2af473312d4f91dec531b"
+  } ]
+}
