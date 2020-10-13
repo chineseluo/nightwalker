@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-NTLLTVC",
+    "children" : [ {
+      "name" : "300-MainThread",
+      "children" : [ {
+        "name" : "测试登录",
+        "uid" : "f700567a6ffea194",
+        "parentUid" : "ee60cd9d625638dc47bbe1da83e8a073",
+        "status" : "passed",
+        "time" : {
+          "start" : 1602494926610,
+          "stop" : 1602494927681,
+          "duration" : 1071
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ee60cd9d625638dc47bbe1da83e8a073"
+    } ],
+    "uid" : "364c08e971958ee45e5acaf71c195702"
+  } ]
+}
