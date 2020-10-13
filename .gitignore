@@ -1,5 +1,5 @@
 *.pyc
 __pycache__
 .idea
-examples/Report
+examples/Report/*
 testfile
