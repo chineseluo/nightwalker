@@ -2,7 +2,7 @@
 name = "nightwalker"
 version = "0.1.0"
 description = ""
-authors = ["luozhongwen <luozw@inhand.com.cn>"]
+authors = ["chineseluo <848257135@qq.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
