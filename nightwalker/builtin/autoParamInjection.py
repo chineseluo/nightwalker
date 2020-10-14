@@ -14,7 +14,6 @@
 import yaml
 import os
 import logging
-from examples.Common.FileOption.yamlOption import YamlFileOption
 
 
 class AutoInjection:
@@ -23,9 +22,26 @@ class AutoInjection:
     """
     def __init__(self, *args):
         self.interface_info = []
-        self.__read_yaml(*args)
+        self.__yaml_analysis(*args)
 
-    def __read_yaml(self, *args):
+    @staticmethod
+    def read_yaml(file):
+        """
+        读取yml文件
+        :param file:
+        :return:
+        """
+        if os.path.isfile(file):
+            fr = open(file, 'r', encoding='utf-8')
+            yaml_info = yaml.safe_load(fr)
+            fr.close()
+            return yaml_info
+        else:
+            print(file, '文件不存在')
+            logging.error('文件不存在！{}'.format(file))
+            return None
+
+    def __yaml_analysis(self, *args):
         """
         接口yaml对象读取，通过子类继承父类AutoInjection，子类初始化时，向上转型，到对应子类yaml模块中读取yaml文件
         :param args:
@@ -33,10 +49,10 @@ class AutoInjection:
         """
         if len(args) == 1:
             yaml_path = os.path.join(os.path.dirname(__file__), args[0], args[0] + ".yml")
-            self.interface_info = YamlFileOption().read_yaml(yaml_path)['parameters']
+            self.interface_info = self.read_yaml(yaml_path)['parameters']
         elif len(args) == 2:
             yaml_path = os.path.join(os.path.dirname(__file__), args[0], args[1] + ".yml")
-            self.interface_info = YamlFileOption().read_yaml(yaml_path)['parameters']
+            self.interface_info = self.read_yaml(yaml_path)['parameters']
         else:
             logging.error("参数传递错误，只能接收两个参数")
 
@@ -57,4 +73,5 @@ class AutoInjection:
 
 
 if __name__ == '__main__':
-    ...
+    a = AutoInjection("Login")
+    a.get_param_by_yaml("用户登录")
